@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Dev_API_Automation_Test]" parallel="tests">
+  <test name="simpletest(failed)" parallel="tests">
+    <parameter name="env" value="dev"/>
+    <classes>
+      <class name="com.clinical6.coreplatform.simpletest">
+        <methods>
+          <include name="test1"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.clinical6.coreplatform.simpletest -->
+    </classes>
+  </test> <!-- simpletest(failed) -->
+</suite> <!-- Failed suite [Dev_API_Automation_Test] -->

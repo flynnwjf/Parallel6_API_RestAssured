@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Dev_API_Automation_Test" verbose="1" parallel="tests" thread-count="1">  
+    
+    <test name="simpletest" preserve-order="true">
+    <parameter name ="env" value="dev"/>
+      <classes>
+ 	 	<class name="com.clinical6.coreplatform.simpletest">
+ 	 	      <methods>
+                    <include name="test1" />
+              </methods>
+ 	 	</class>
+ 	  </classes>
+    </test>
+    
+</suite>
